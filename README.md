@@ -44,6 +44,8 @@
 [Instagram]: https://www.instagram.com
 [YouTube]: https://www.youtube.com
 [LeetCode]: https://leetcode.com/7H0M45_4N70NY/
+[Codiumm]: https://codeium.com/profile/datawhisperer
+[![autocomplete](https://codeium.com/badges/user/datawhisperer/autocomplete)](https://codeium.com/profile/datawhisperer)
 
 ## 💰 You can support me if you liked my work 
 
