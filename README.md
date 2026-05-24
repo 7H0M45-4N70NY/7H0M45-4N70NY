@@ -1,59 +1,119 @@
-<h1><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hey! Nice to see you.</h1>
-<h1 align="center">I'm Thomas 😀</h1>
-<h4 align="center">I'm a Data Scientist </h4>
+<div align="center">
+  <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="50" />
+  
+  # Hey! Nice to see you. 👋
+  
+  I'm **Thomas** — Data Scientist & Machine Learning Enthusiast
+  
+  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=36BCF7FF&center=true&vCenter=true&width=600&lines=Deep+Learning+%7C+Machine+Learning;Computer+Vision+%7C+NLP;Building+Intelligent+Systems)](https://git.io/typing-svg)
 
+</div>
 
+---
 
-### I have technical experience and interest in:
-* Deep Learning
-* Machine Learning
-* Computer vision 
-* Natural Language Processing 
+## 🎯 About Me
 
+I'm a passionate **Data Scientist** with expertise in building intelligent systems and solving complex problems through machine learning and AI. I love turning data into actionable insights and creating innovative solutions.
 
+### 💡 Technical Expertise
 
+<table>
+  <tr>
+    <td align="center"><strong>Deep Learning</strong></td>
+    <td align="center"><strong>Machine Learning</strong></td>
+    <td align="center"><strong>Computer Vision</strong></td>
+    <td align="center"><strong>NLP</strong></td>
+  </tr>
+  <tr>
+    <td align="center">🧠</td>
+    <td align="center">📊</td>
+    <td align="center">👁️</td>
+    <td align="center">💬</td>
+  </tr>
+</table>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">  <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>  <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>  <a href="https://www.mongodb.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a>  <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a><a href="https://cassandra.apache.org/_/index.html" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg" alt="CassandraDB" width="40" height="40"/> </a> <a href="https://hadoop.apache.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Hadoop_logo.svg" alt="Hadoop" width="40" height="40"/></a>
-<a href="https://spark.apache.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Spark" width="40" height="40"/></a>
-</p>
+---
 
-### My Hobbies and interests:
-* Traveling
-* Coding
-* Music
+## 🛠️ Languages & Tools
 
+<div align="center">
 
+**Programming Languages**
 
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![R](https://img.shields.io/badge/-R-276DC3?style=flat&logo=r&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-CC2927?style=flat&logo=mysql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-#### You can also find me on: 
+**ML & Data Science**
 
-[<img align="left" alt="entbappy | LinkedIn" width="30px" src="https://img.icons8.com/color/48/000000/linkedin.png" />][linkedin]
-[<img align="left" alt="entbappy | Twitter" width="30px" src="https://img.icons8.com/fluent/48/000000/twitter.png" />][twitter]
-[<img align="left" alt="entbappy | Instagram" width="30px" src="https://img.icons8.com/fluent/48/000000/instagram-new.png" />][Instagram]
-[<img align="left" alt="entbappy | YouTube" width="30px" src="https://www.vectorlogo.zone/logos/youtube/youtube-tile.svg" />][YouTube]
-[<img align="left" alt="entbappy | LeetCode" width="30px" src="https://user-images.githubusercontent.com/36547915/97088991-45da5d00-1652-11eb-900f-80d106540f4f.png" />][LeetCode]
-                                                                                                                                                                       
+![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/-ScikitLearn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white)
 
-<br>
+**Tools & Platforms**
 
-<hr>
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/-Apache%20Spark-E25A1C?style=flat&logo=apache-spark&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
+![Jupyter](https://img.shields.io/badge/-Jupyter-F37726?style=flat&logo=jupyter&logoColor=white)
 
-[linkedin]: https://www.linkedin.com/in/thomasantony666/
-[twitter]: https://twitter.com
-[Instagram]: https://www.instagram.com
-[YouTube]: https://www.youtube.com
-[LeetCode]: https://leetcode.com/7H0M45_4N70NY/
-[Codiumm]: https://codeium.com/profile/datawhisperer
-[![autocomplete](https://codeium.com/badges/user/datawhisperer/autocomplete)](https://codeium.com/profile/datawhisperer)
+</div>
 
-## 💰 You can support me if you liked my work 
+---
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=7H0M45-4N70NY&show_icons=true&locale=en&layout=compact" alt="7H0M45-4N70NY" /></p>
+## 🎨 Hobbies & Interests
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=7H0M45-4N70NY&show_icons=true&locale=en" alt="7H0M45-4N70NY" /></p>
+<table align="center">
+  <tr>
+    <td align="center"><strong>✈️ Traveling</strong></td>
+    <td align="center"><strong>💻 Coding</strong></td>
+    <td align="center"><strong>🎵 Music</strong></td>
+  </tr>
+  <tr>
+    <td>Exploring new places<br>and cultures</td>
+    <td>Building innovative<br>solutions</td>
+    <td>Creating & discovering<br>great music</td>
+  </tr>
+</table>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=7H0M45-4N70NY&" alt="7H0M45-4N70NY" /></p>
+---
 
+## 📊 GitHub Stats
 
+<div align="center">
+  <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs?username=7H0M45-4N70NY&show_icons=true&theme=radical&layout=compact&hide_border=true" alt="Top Languages" />
+  
+  <img height="200em" src="https://github-readme-stats.vercel.app/api?username=7H0M45-4N70NY&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" />
+  
+  <img height="200em" src="https://github-readme-streak-stats.herokuapp.com/?user=7H0M45-4N70NY&theme=radical&hide_border=true" alt="GitHub Streak" />
+</div>
 
+---
+
+## 🌐 Connect With Me
+
+<div align="center">
+
+[<img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/thomasantony666/)
+[<img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />](https://twitter.com)
+[<img src="https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />](https://www.instagram.com)
+[<img src="https://img.shields.io/badge/-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />](https://www.youtube.com)
+[<img src="https://img.shields.io/badge/-LeetCode-FFA500?style=for-the-badge&logo=leetcode&logoColor=white" />](https://leetcode.com/7H0M45_4N70NY/)
+
+</div>
+
+---
+
+<div align="center">
+
+### 💰 Support My Work
+
+If you found my work helpful, consider supporting me!
+
+[![Codeium Profile](https://codeium.com/badges/user/datawhisperer/autocomplete)](https://codeium.com/profile/datawhisperer)
+
+**Made with ❤️ by Thomas**
+
+</div>
