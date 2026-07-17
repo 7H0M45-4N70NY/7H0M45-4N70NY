@@ -7,255 +7,83 @@
    ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝
 ```
 
-# Machine Learning Systems Engineer
+**Self-taught. Still learning. Building systems that think.**
 
-**Building scalable AI infrastructure and intelligent systems for production.**
-
-Specializing in distributed ML pipelines, LLM orchestration, computer vision at scale, and production-grade AI systems. Focus on systems thinking, architectural reliability, and engineering depth.
+*Torture your data until it confesses.*
 
 ---
 
-## → Current Focus
+## Now
 
-```
-→ Hybrid retrieval-augmented generation pipelines
-→ Distributed inference optimization
-→ Vision-language model integration
-→ ML observability & monitoring
-→ Efficient transformers & model compression
-→ Scalable backend architectures
-```
+Building **Pixel** — a multi-agent system that reasons, answers, and acts on behalf of users.
+Ships **VisionFlow** — production computer vision for retail analytics (YOLO/RF-DETR, ByteTrack, active learning).
 
 ---
 
-## Featured Systems
+## What I've Built
 
-### 1. Production ML Inference Pipeline
-**Multi-model distributed inference with latency optimization**
+### VisionFlow — Retail Analytics System
+Production-grade CV system. Dual detector mode (YOLO11n / RF-DETR swappable via config flag), real-time multi-object tracking with ByteTrack, active learning loop that captures low-confidence frames for retraining. Runs fully local, no cloud dependency. Frontend dashboard in Next.js, inference server in FastAPI.
 
-Engineering focus: Model serving, request batching, GPU orchestration, performance profiling
-
-**Architecture**
 ```
-Request Queue → Load Balancer → Model Servers (GPU Pool) → Response Cache → Client
-                     ↓
-              Inference Metrics
-              (Latency, Throughput, VRAM)
+Input → Detection (YOLO / RF-DETR) → ByteTrack → Analytics → Dashboard
+                                                          ↓
+                                              Active Learning Loop
 ```
 
-**Performance Characteristics**
-| Metric | Target | Current |
-|--------|--------|---------|
-| P50 Latency | <100ms | 87ms |
-| P99 Latency | <500ms | 342ms |
-| Throughput | 500+ req/s | 580 req/s |
-| GPU Utilization | >80% | 84% |
+**Stack**: PyTorch · YOLO · FastAPI · Docker · MLflow · DVC · Next.js
 
-**Stack**: FastAPI · ONNX Runtime · Redis · Kubernetes · NVIDIA Triton
+### Pixel — Multi-Agent System
+An agentic system that reasons, queries, and acts for users. Designed for complex multi-step tasks with tool use, memory, and chain-of-thought. Being built solo.
+
+**Stack**: Python · LangChain · Claude API · FastAPI
+
+### Chat With Multiple PDFs
+LangChain + Google Generative AI for multi-document RAG. Ask questions across PDFs, get grounded answers.
+
+### YouTube Script Generator
+Streamlit app using Gemini as backend — drop a YouTube URL, get a script.
+
+### LinkedIn Automation
+3 notebooks: auto-apply to jobs, scrape applied job details, generate ATS reports.
 
 ---
 
-### 2. Hybrid RAG System
-**Semantic search + dense retrieval with LLM augmentation**
+## Arc
 
-Engineering focus: Vector indexing, retrieval ranking, prompt optimization, response quality
-
-**Architecture**
 ```
-Query Input
-    ↓
-[Semantic Search] ← Vector DB (FAISS/Pinecone)
-    ↓
-[Dense Retrieval] ← Sparse Index (BM25)
-    ↓
-[Reranking] ← Cross-Encoder Model
-    ↓
-[Context Assembly]
-    ↓
-[LLM Generation] ← GPT-4 / Claude
-    ↓
-Response
+2023 ─── Jupyter notebooks, internships, classic ML
+2024 ─── MLOps, production pipelines, LLMs
+2025 ─── Computer vision systems, Docker deployments
+2026 ─── Multi-agent systems, agent orchestration
 ```
 
-**Quality Metrics**
-```
-Retrieval Recall@10:     0.94
-Mean Reciprocal Rank:    0.87
-Response Relevance:      0.91 (human eval)
-Latency (p95):          420ms
-```
-
-**Stack**: LangChain · Pinecone · FAISS · HuggingFace Transformers · FastAPI
+45+ repos. Started with `.fit()` and `.predict()`. Now shipping containerized systems with active learning loops.
 
 ---
 
-### 3. Computer Vision Detection System
-**Real-time object detection at production scale**
+## Stack
 
-Engineering focus: Model optimization, batching inference, edge deployment, monitoring
+**Actually use daily:**
 
-**Architecture**
 ```
-Input Stream → Preprocessing → YOLOv8 Detection → Post-processing
-                                     ↓
-                            Confidence Thresholding
-                                     ↓
-                            Bounding Box Assembly
-                                     ↓
-                            Database Logging
+ML/DL:     Python · PyTorch · YOLO · HuggingFace · Scikit-learn
+LLMs:      LangChain · Claude API · Gemini · GPT-4
+Backend:   FastAPI · Streamlit · PostgreSQL · Redis
+Infra:     Docker · Docker Compose · GitHub Actions
+MLOps:     MLflow · DVC · Prometheus · Grafana
+Frontend:  TypeScript · Next.js
 ```
 
-**Performance Specs**
-```
-Input Resolution:  1920×1080
-Inference Speed:   28 FPS (RTX 4090)
-Detection Classes: 80 (COCO dataset)
-mAP@0.5:          0.82
-Quantization:     INT8 (2.5× speedup)
-```
-
-**Stack**: PyTorch · YOLOv8 · TorchVision · OpenCV · CUDA Optimization
+Some things I've touched. Some I've shipped. Some I'm still learning.
 
 ---
 
-## System Architecture Diagrams
+## Philosophy
 
-### ML Pipeline Overview
-```
-┌─────────────────────────────────────────────────────────┐
-│                   Data Ingestion Layer                   │
-│                  (Kafka, Event Streaming)                │
-└──────────────────────────┬──────────────────────────────┘
-                           ↓
-┌─────────────────────────────────────────────────────────┐
-│               Feature Engineering Pipeline               │
-│          (Spark, Pandas, Feature Stores)                │
-└──────────────────────────┬──────────────────────────────┘
-                           ↓
-┌─────────────────────────────────────────────────────────┐
-│              Model Training & Experimentation            │
-│         (PyTorch, TensorFlow, MLflow Tracking)          │
-└──────────────────────────┬──────────────────────────────┘
-                           ↓
-┌─────────────────────────────────────────────────────────┐
-│                 Model Registry & Versioning             │
-│              (MLflow, DVC, Model Artifacts)             │
-└──────────────────────────┬──────────────────────────────┘
-                           ↓
-┌─────────────────────────────────────────────────────────┐
-│              Production Inference Services               │
-│      (Kubernetes, Monitoring, Auto-scaling)             │
-└──────────────────────────┬──────────────────────────────┘
-                           ↓
-┌─────────────────────────────────────────────────────────┐
-│                 Monitoring & Observability               │
-│         (Prometheus, Grafana, DataDog Alerts)           │
-└─────────────────────────────────────────────────────────┘
-```
+**Torture your data until it confesses.**
 
-### Model Serving Architecture
-```
-    User Requests
-         ↓
-    ┌────────────┐
-    │ Load       │
-    │ Balancer   │
-    └─────┬──────┘
-          ↓
-    ┌─────────────────────┐
-    │  Request Queue      │
-    │  (Redis/RabbitMQ)   │
-    └─────┬───────────────┘
-          ↓
-    ┌─────────────────────────────────┐
-    │   Inference Workers (Replicas)  │
-    │  ├─ Worker-1 (GPU-0)            │
-    │  ├─ Worker-2 (GPU-1)            │
-    │  ├─ Worker-3 (GPU-2)            │
-    │  └─ Worker-4 (GPU-3)            │
-    └─────────┬───────────────────────┘
-              ↓
-    ┌─────────────────────┐
-    │  Response Cache     │
-    │  (Redis)            │
-    └─────┬───────────────┘
-          ↓
-    User Response
-```
-
----
-
-## Engineering Metrics Dashboard
-
-```
-╔═══════════════════════════════════════════════════════════╗
-║                   PRODUCTION SYSTEMS                      ║
-╠═════════════════════════════════════════════════════════════╣
-║  Inference Latency (P95)        │  342ms                  ║
-║  Model Uptime                   │  99.97%                 ║
-║  Request Throughput             │  580 req/s              ║
-║  GPU Utilization                │  84%                    ║
-║  Cache Hit Ratio                │  76%                    ║
-║  Model Deployments              │  12 active              ║
-║  Data Processing Volume         │  2.3TB/day              ║
-╚═════════════════════════════════════════════════════════════╝
-```
-
----
-
-## Technical Stack
-
-### Machine Learning
-```
-Deep Learning:       PyTorch · TensorFlow · JAX
-Computer Vision:     YOLOv8 · Detectron2 · OpenCV
-NLP & LLMs:          HuggingFace Transformers · LangChain
-Classical ML:        Scikit-learn · XGBoost · LightGBM
-MLOps & Tracking:    MLflow · Weights & Biases · DVC
-```
-
-### Backend Infrastructure
-```
-APIs & Services:     FastAPI · Flask · gRPC
-Async/Queuing:       Celery · Kafka · RabbitMQ
-Data Storage:        PostgreSQL · MongoDB · Redis
-Caching:             Redis · Memcached
-Message Brokers:     Kafka · RabbitMQ
-```
-
-### DevOps & Infrastructure
-```
-Containerization:    Docker · Docker Compose
-Orchestration:       Kubernetes · Helm
-Cloud Platforms:     AWS (EC2, S3, SageMaker) · GCP
-Monitoring:          Prometheus · Grafana · DataDog
-CI/CD:               GitHub Actions · GitLab CI
-```
-
-### Data Engineering
-```
-Batch Processing:    Apache Spark · Dask
-Stream Processing:   Kafka Streams · Flink
-Data Warehousing:    BigQuery · Snowflake
-Feature Stores:      Feast · Tecton
-Vector DBs:          Pinecone · Weaviate · FAISS
-```
-
----
-
-## Engineering Philosophy
-
-**Systems First**
-Architecture, reliability, and scalability precede feature richness. Every system designed with production constraints in mind.
-
-**Measurable Performance**
-All systems include comprehensive metrics: latency distributions, throughput, resource utilization, error rates. If it can't be measured, it can't be optimized.
-
-**Minimal Complexity**
-Prefer simple, understandable systems over clever abstractions. Complexity is a liability.
-
-**Production Readiness**
-Deployment preparation is not an afterthought. Monitoring, logging, observability, and graceful degradation built from day one.
+Build things that work. Measure what matters. Prefer simple over clever.
 
 ---
 
@@ -271,36 +99,11 @@ Deployment preparation is not an afterthought. Monitoring, logging, observabilit
 
 ---
 
-## Open Source & Contributions
+## Contact
 
-Active contributor to ML infrastructure projects. Focus on:
-- Model optimization and deployment tooling
-- Production ML observability
-- Distributed systems for AI workloads
-- Performance benchmarking
-
----
-
-## Contact & Links
-
-**Professional**
 - **LinkedIn**: [linkedin.com/in/thomasantony666](https://www.linkedin.com/in/thomasantony666/)
 - **LeetCode**: [leetcode.com/7H0M45_4N70NY](https://leetcode.com/7H0M45_4N70NY/)
 
-**Social**
-- **Twitter/X**: [twitter.com](https://twitter.com)
-- **YouTube**: [youtube.com](https://www.youtube.com)
-- **Instagram**: [instagram.com](https://www.instagram.com)
-
-**Development Tools**
-- **Codeium Profile**: [codeium.com/profile/datawhisperer](https://codeium.com/profile/datawhisperer)
-
 ---
 
-<div align="center">
-
-**Building production-grade AI systems.**
-
-*Systems engineering • Distributed ML • Infrastructure • Performance*
-
-</div>
+*Building. Breaking. Learning. Shipping.*
