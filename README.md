@@ -1,109 +1,117 @@
-```
+```text
 ████████╗██╗  ██╗ ██████╗ ███╗   ███╗ █████╗ ███████╗
 ╚══██╔══╝██║  ██║██╔═══██╗████╗ ████║██╔══██╗██╔════╝
    ██║   ███████║██║   ██║██╔████╔██║███████║███████╗
    ██║   ██╔══██║██║   ██║██║╚██╔╝██║██╔══██║╚════██║
    ██║   ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║  ██║███████║
    ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝
+
+            AI SYSTEMS  /  LLM + RAG  /  COMPUTER VISION
 ```
 
-**Self-taught. Still learning. Building systems that think.**
+# AI/ML Engineer
 
-*Torture your data until it confesses.*
+Building AI applications from research and prototypes through backend services, deployment, and iteration. My work spans retrieval, agent workflows, computer vision, and practical ML systems.
 
----
-
-## Now
-
-Building **Pixel** — a multi-agent system that reasons, answers, and acts on behalf of users.
-Ships **VisionFlow** — production computer vision for retail analytics (YOLO/RF-DETR, ByteTrack, active learning).
+**Python · FastAPI · Django · LangChain · LangGraph · PyTorch**  
+📍 Kottayam, India &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/thomasantony73/) &nbsp;·&nbsp; [Email](mailto:thomasantony14@gmail.com)
 
 ---
 
-## What I've Built
+## → Current Focus
 
-### VisionFlow — Retail Analytics System
-Production-grade CV system. Dual detector mode (YOLO11n / RF-DETR swappable via config flag), real-time multi-object tracking with ByteTrack, active learning loop that captures low-confidence frames for retraining. Runs fully local, no cloud dependency. Frontend dashboard in Next.js, inference server in FastAPI.
-
-```
-Input → Detection (YOLO / RF-DETR) → ByteTrack → Analytics → Dashboard
-                                                          ↓
-                                              Active Learning Loop
+```text
+→ Retrieval that combines lexical and semantic signals
+→ Agents that can route, use tools, and take user-directed actions
+→ Computer vision models and the workflows around training and deployment
+→ Python APIs that connect models to real products
 ```
 
-**Stack**: PyTorch · YOLO · FastAPI · Docker · MLflow · DVC · Next.js
+## → Featured Systems
 
-### Pixel — Multi-Agent System
-An agentic system that reasons, queries, and acts for users. Designed for complex multi-step tasks with tool use, memory, and chain-of-thought. Being built solo.
+### 01 / Agentic Digital Signage CMS Assistant
 
-**Stack**: Python · LangChain · Claude API · FastAPI
+**From retrieval chatbot to an assistant that can answer questions and support user-directed CMS actions.** I worked on routing between retrieval and planning/execution workflows, with attention to token use and model cost.
 
-### Chat With Multiple PDFs
-LangChain + Google Generative AI for multi-document RAG. Ask questions across PDFs, get grounded answers.
-
-### YouTube Script Generator
-Streamlit app using Gemini as backend — drop a YouTube URL, get a script.
-
-### LinkedIn Automation
-3 notebooks: auto-apply to jobs, scrape applied job details, generate ATS reports.
-
----
-
-## Arc
-
-```
-2023 ─── Jupyter notebooks, internships, classic ML
-2024 ─── MLOps, production pipelines, LLMs
-2025 ─── Computer vision systems, Docker deployments
-2026 ─── Multi-agent systems, agent orchestration
+```text
+User request
+     │
+     ▼
+Intent + workflow routing
+     ├──────────────► Retrieval path ─────► Answer
+     │
+     └──────────────► Planning / tools ───► CMS action
 ```
 
-45+ repos. Started with `.fit()` and `.predict()`. Now shipping containerized systems with active learning loops.
+`LangChain` · `LangGraph` · `FastAPI` · `AWS EC2`
 
----
+### 02 / Hybrid RAG System
 
-## Stack
+**BM25 + embeddings + MMR reranking**, with multi-turn conversation handling and persistent sessions. This work recorded a **40% improvement in retrieval relevance**.
 
-**Actually use daily:**
-
-```
-ML/DL:     Python · PyTorch · YOLO · HuggingFace · Scikit-learn
-LLMs:      LangChain · Claude API · Gemini · GPT-4
-Backend:   FastAPI · Streamlit · PostgreSQL · Redis
-Infra:     Docker · Docker Compose · GitHub Actions
-MLOps:     MLflow · DVC · Prometheus · Grafana
-Frontend:  TypeScript · Next.js
+```text
+                         ┌─ BM25 ──────────────┐
+Query ──► retrieval ─────┤                      ├──► MMR reranking
+                         └─ embeddings ────────┘           │
+                                                           ▼
+                                                context + LLM response
 ```
 
-Some things I've touched. Some I've shipped. Some I'm still learning.
+`LangChain` · `ChromaDB` · `MongoDB Atlas` · `FastAPI`
+
+### 03 / Computer Vision + Model Workflows
+
+**Face detection and visitor demographic analysis:** fine-tuned RFDETR for face detection and developed image-classification models. Dataset, experiment, and model workflows used Roboflow, DagsHub, MLflow, and DVC.
+
+```text
+Dataset ──► training / fine-tuning ──► evaluation ──► model versioning
+                                                       │
+                                                       ▼
+                                                inference wrapper / API
+```
+
+`RFDETR` · `PyTorch` · `Roboflow` · `DagsHub` · `MLflow` · `DVC`
+
+### 04 / Multi-Agent News Generation
+
+**Research-to-article workflow** with hierarchical agents, real-time web search, asynchronous processing, and concurrent article generation. Deployed on Google Cloud Run.
+
+```text
+Topic ──► coordinator ──► research ──► generation ──► article
+                         └──── asynchronous work ──────┘
+```
+
+`Google ADK` · `Gemini` · `FastAPI` · `Google Cloud Run`
 
 ---
 
-## Philosophy
+## → Other Work
 
-**Torture your data until it confesses.**
+- **WhatsApp CRM (in progress):** a multi-tenant Django backend integrating Meta Embedded Signup, WhatsApp Cloud API, webhooks, authentication, onboarding, messaging, and templates.
+- **Text classification:** built a BERT-based system that achieved **92% F1-score**.
+- **Helmet detection:** developed a YOLOv8 model that achieved **89% mAP**.
+- **Teaching:** deliver weekend data science and machine learning sessions and mentor students through practical projects.
 
-Build things that work. Measure what matters. Prefer simple over clever.
+The system descriptions above are drawn from my professional work. Employer and client source code is not linked here. You can explore my [public repositories](https://github.com/7H0M45-4N70NY?tab=repositories) separately.
 
----
+## → Technical Stack
 
-## GitHub Statistics
+| Area | Tools and methods I have used |
+|---|---|
+| LLM applications | LangChain, LangGraph, Google ADK, BM25, embeddings, MMR, tool calling |
+| ML and vision | PyTorch, RFDETR, YOLO, RetinaFace, MTCNN, ByteTrack, ONNX Runtime |
+| MLOps | Roboflow, DagsHub, MLflow, DVC, GitHub Actions |
+| Backend | Python, Django, FastAPI, REST APIs, async programming, authentication |
+| Infrastructure and data | Docker, AWS EC2, Google Cloud Run, Linux, Nginx, MongoDB, PostgreSQL, ChromaDB |
 
-<div align="center">
+## → Currently Learning
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=7H0M45-4N70NY&layout=compact&theme=tokyonight&hide_border=true)
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api/?username=7H0M45-4N70NY&theme=tokyonight&hide_border=true&show_icons=true)
-
-</div>
-
----
-
-## Contact
-
-- **LinkedIn**: [linkedin.com/in/thomasantony666](https://www.linkedin.com/in/thomasantony666/)
-- **LeetCode**: [leetcode.com/7H0M45_4N70NY](https://leetcode.com/7H0M45_4N70NY/)
+**Advanced Route — Production AI Engineering**, Krish Naik Academy — **in progress**. The curriculum covers LLM architecture, fine-tuning, RAG, agentic systems, evaluation, and GenAIOps. [Course details](https://advancedroute.krishnaik.cloud/).
 
 ---
 
-*Building. Breaking. Learning. Shipping.*
+```text
+BUILD THE SYSTEM  →  TEST THE BEHAVIOUR  →  IMPROVE WHAT THE EVIDENCE SHOWS
+```
+
+[LinkedIn](https://www.linkedin.com/in/thomasantony73/) · [Email](mailto:thomasantony14@gmail.com) · [Repositories](https://github.com/7H0M45-4N70NY?tab=repositories)
