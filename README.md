@@ -85,15 +85,14 @@ Topic ──► coordinator ──► research ──► generation ──► ar
 - **Text classification:** built a BERT-based system that achieved **92% F1-score**.
 - **Teaching:** deliver weekend data science and machine learning sessions and mentor students through practical projects.
 
-Computer-vision and MLOps work remains available as secondary public evidence in the [VisionFlow — Retail Analytics repository](https://github.com/7H0M45-4N70NY/vision-ml-system), but is not the lead direction for my current search.
-
-The system descriptions above are drawn from my professional work. Employer and client source code is not linked here. You can explore my [public repositories](https://github.com/7H0M45-4N70NY?tab=repositories) separately.
-
 ## → The Toolset
 
 ### ⌘ Coding assistants
 
 ![Codex](https://img.shields.io/badge/-Codex-252A34?style=flat-square&logo=openai&logoColor=white)
+![Claude_Code](https://img.shields.io/badge/-Claude_Code-252A34?style=flat-square&logo=anthropic&logoColor=white)
+![Antigravity](https://img.shields.io/badge/-Antigravity-252A34?style=flat-square&logo=google&logoColor=white)
+![OpenCode](https://img.shields.io/badge/-OpenCode-252A34?style=flat-square)
 
 ### ⚙ Frameworks and libraries
 
